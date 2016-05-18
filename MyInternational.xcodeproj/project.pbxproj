@@ -15,6 +15,9 @@
 		4D9979051CEC558800E76FA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D9979031CEC558800E76FA2 /* LaunchScreen.storyboard */; };
 		4D9979101CEC558800E76FA2 /* MyInternationalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D99790F1CEC558800E76FA2 /* MyInternationalTests.m */; };
 		4D99791B1CEC558800E76FA2 /* MyInternationalUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D99791A1CEC558800E76FA2 /* MyInternationalUITests.m */; };
+		4D99792A1CEC563800E76FA2 /* hello.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D99792C1CEC563800E76FA2 /* hello.strings */; };
+		4D9979301CEC575B00E76FA2 /* InternationalControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D99792F1CEC575B00E76FA2 /* InternationalControl.m */; };
+		4D9979331CEC5A3E00E76FA2 /* YGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9979321CEC5A3E00E76FA2 /* YGViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		4D9979161CEC558800E76FA2 /* MyInternationalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyInternationalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D99791A1CEC558800E76FA2 /* MyInternationalUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyInternationalUITests.m; sourceTree = "<group>"; };
 		4D99791C1CEC558800E76FA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D99792B1CEC563800E76FA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/hello.strings; sourceTree = "<group>"; };
+		4D99792D1CEC569600E76FA2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/hello.strings"; sourceTree = "<group>"; };
+		4D99792E1CEC575B00E76FA2 /* InternationalControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InternationalControl.h; sourceTree = "<group>"; };
+		4D99792F1CEC575B00E76FA2 /* InternationalControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InternationalControl.m; sourceTree = "<group>"; };
+		4D9979311CEC5A3E00E76FA2 /* YGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YGViewController.h; path = MyInternational/YGViewController.h; sourceTree = "<group>"; };
+		4D9979321CEC5A3E00E76FA2 /* YGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YGViewController.m; path = MyInternational/YGViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,10 @@
 		4D9978E91CEC558800E76FA2 = {
 			isa = PBXGroup;
 			children = (
+				4D99792E1CEC575B00E76FA2 /* InternationalControl.h */,
+				4D99792F1CEC575B00E76FA2 /* InternationalControl.m */,
+				4D9979311CEC5A3E00E76FA2 /* YGViewController.h */,
+				4D9979321CEC5A3E00E76FA2 /* YGViewController.m */,
 				4D9978F41CEC558800E76FA2 /* MyInternational */,
 				4D99790E1CEC558800E76FA2 /* MyInternationalTests */,
 				4D9979191CEC558800E76FA2 /* MyInternationalUITests */,
@@ -117,6 +130,7 @@
 		4D9978F51CEC558800E76FA2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4D99792C1CEC563800E76FA2 /* hello.strings */,
 				4D9978F61CEC558800E76FA2 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -225,6 +239,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 4D9978E91CEC558800E76FA2;
 			productRefGroup = 4D9978F31CEC558800E76FA2 /* Products */;
@@ -244,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D9979051CEC558800E76FA2 /* LaunchScreen.storyboard in Resources */,
+				4D99792A1CEC563800E76FA2 /* hello.strings in Resources */,
 				4D9979021CEC558800E76FA2 /* Assets.xcassets in Resources */,
 				4D9979001CEC558800E76FA2 /* Main.storyboard in Resources */,
 			);
@@ -271,7 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D9978FD1CEC558800E76FA2 /* ViewController.m in Sources */,
+				4D9979331CEC5A3E00E76FA2 /* YGViewController.m in Sources */,
 				4D9978FA1CEC558800E76FA2 /* AppDelegate.m in Sources */,
+				4D9979301CEC575B00E76FA2 /* InternationalControl.m in Sources */,
 				4D9978F71CEC558800E76FA2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +340,16 @@
 				4D9979041CEC558800E76FA2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4D99792C1CEC563800E76FA2 /* hello.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D99792B1CEC563800E76FA2 /* en */,
+				4D99792D1CEC569600E76FA2 /* zh-Hans */,
+			);
+			name = hello.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
